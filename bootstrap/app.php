@@ -62,12 +62,12 @@ $app->singleton('filesystem', function ($app) {
 |
 */
 
-// $app->middleware([
-//    App\Http\Middleware\CustomeAuth::class
-// ]);
+$app->middleware([
+   App\Http\Middleware\CustomeAuth::class
+]);
 
 $app->routeMiddleware([
-    'auth' => App\Http\Middleware\CustomeAuth::class,
+    'CustomeAuth' => App\Http\Middleware\CustomeAuth::class,
 ]);
 
 /*

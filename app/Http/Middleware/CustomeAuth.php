@@ -2,6 +2,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use App\AccessKey;
 
 class CustomeAuth
 {
@@ -9,9 +10,9 @@ class CustomeAuth
 	public function handle($request, Closure $next)
 	{
 		try {
-			$auth = true;
+			$auth = AccessKey::find($request->header('x-api-key'));
 			if ($auth) {
-				$response = $next[$request];
+				return $next($request);
 			}else{
 				$response = [
 					'status' => false,

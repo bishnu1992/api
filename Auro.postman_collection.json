@@ -1,0 +1,458 @@
+{
+	"id": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+	"name": "Auro",
+	"description": "",
+	"order": [
+		"58314170-b85f-ddf8-7268-0e521221da74",
+		"f649c3a3-2c75-594f-97a7-b6294cbe6575",
+		"26b37c24-4e53-215f-1f4d-e6a2991d492a",
+		"286a8180-fc87-0c2c-6709-e7b229f18c3b",
+		"888952c8-c07f-985e-8a51-fcb591dd0cb0",
+		"6dde53f6-ffa0-41d3-23cc-d0f7b672d27e",
+		"dc76792a-34e1-f0c8-8004-85c013e869d8",
+		"ed185bbb-e153-6ef5-1fc1-18ae17e880f7",
+		"27878f9c-1d90-a0ba-78c5-6207b8a44f84",
+		"25ddaf4f-77a7-9e80-6407-118d2fd873d2",
+		"7c94021f-3a9f-9d0a-7845-8e7d378ef351"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1592838509770,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "25ddaf4f-77a7-9e80-6407-118d2fd873d2",
+			"headers": "x-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/class/5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "duration",
+					"value": "300",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "category_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "trainer_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "difficulty_level_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "audio",
+					"value": "01 - Kuch To Hai - Do Lafzon Ki Kahani [Songspk.LIVE].mp3",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Hello World",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986237304,
+			"name": "class",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": []
+		},
+		{
+			"id": "26b37c24-4e53-215f-1f4d-e6a2991d492a",
+			"headers": "x-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/categories",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986291598,
+			"name": "categories",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": []
+		},
+		{
+			"id": "27878f9c-1d90-a0ba-78c5-6207b8a44f84",
+			"headers": "x-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/class",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "duration",
+					"value": "300",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "category_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "trainer_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "difficulty_level_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "audio",
+					"value": "Tere Bina Zindagi Se-Lata Mangeshkar--Raag.Me--.mp3",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Hello9",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986225765,
+			"name": "class",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": []
+		},
+		{
+			"id": "286a8180-fc87-0c2c-6709-e7b229f18c3b",
+			"headers": "x-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/trainers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986297030,
+			"name": "trainers",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": []
+		},
+		{
+			"id": "58314170-b85f-ddf8-7268-0e521221da74",
+			"headers": "x-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/classes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986212187,
+			"name": "classes",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": []
+		},
+		{
+			"id": "6dde53f6-ffa0-41d3-23cc-d0f7b672d27e",
+			"headers": "Content-Type: application/json\nx-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/category",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986311110,
+			"name": "category",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"Yoga\"\n}"
+		},
+		{
+			"id": "7c94021f-3a9f-9d0a-7845-8e7d378ef351",
+			"headers": "x-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/class/4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986246713,
+			"name": "class",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": []
+		},
+		{
+			"id": "888952c8-c07f-985e-8a51-fcb591dd0cb0",
+			"headers": "x-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/levels",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986303194,
+			"name": "levels",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": []
+		},
+		{
+			"id": "dc76792a-34e1-f0c8-8004-85c013e869d8",
+			"headers": "Content-Type: application/json\nx-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/trainer",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986320261,
+			"name": "trainer",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"Omar\"\n}"
+		},
+		{
+			"id": "ed185bbb-e153-6ef5-1fc1-18ae17e880f7",
+			"headers": "Content-Type: application/json\nx-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/level",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986326237,
+			"name": "level",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"Advanced\"\n}"
+		},
+		{
+			"id": "f649c3a3-2c75-594f-97a7-b6294cbe6575",
+			"headers": "Content-Type: application/json\nx-api-key: {{access_key}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{access_key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/auro_api_test/api/public/classes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1592986261644,
+			"name": "classes",
+			"description": "",
+			"collectionId": "e4b0b5b2-b464-999e-70c7-11300d75e27d",
+			"responses": [],
+			"rawModeData": "{\r\n\t\"limit\":2,\r\n\t\"offset\":3,\r\n\t\"where\":{\"category_id\":[2,3],\"duration\":[100,300],\"trainer_id\":2}\r\n}"
+		}
+	]
+}
