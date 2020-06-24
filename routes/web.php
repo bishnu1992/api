@@ -11,6 +11,24 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+// $router->get('/', function () use ($router) {
+// 	return $router->app->version();
+// });
+
+Route::get('classes','TrainingClass@list');
+Route::post('class','TrainingClass@store');
+Route::post('class/{id}','TrainingClass@update');
+Route::delete('class/{id}','TrainingClass@delete');
+
+Route::get('categories','Categories@list');
+Route::post('category','Categories@store');
+Route::get('trainers','Trainers@list');
+Route::post('trainer','Trainers@store');
+Route::get('levels','Levels@list');
+Route::post('level','Levels@store');
+
+
+// $router->group(['middleware' => 'CustomeAuth'], function () use ($router) {
+
+
+// });
