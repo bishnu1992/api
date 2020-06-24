@@ -12,7 +12,7 @@ class Trainers extends Controller
 	public function list()
 	{
 		try {
-			$list = Trainer::all()->toArray();
+			$list = Trainer::where('status',1)->get()->toArray();
 			return $list;
 		} catch (Exception $e) {
 			

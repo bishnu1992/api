@@ -12,7 +12,7 @@ class Categories extends Controller
 	public function list()
 	{
 		try {
-			$list = Category::all()->toArray();
+			$list = Category::where('status',1)->get()->toArray();
 			return $list;
 		} catch (Exception $e) {
 			

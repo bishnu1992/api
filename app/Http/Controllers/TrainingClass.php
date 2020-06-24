@@ -11,11 +11,44 @@ use Illuminate\Support\Facades\Storage;
 class TrainingClass extends Controller
 {
 	
-	public function list()
+	public function index()
 	{
 		try {
 
-			$list = TC::all()->toArray();
+			$list = TC::where('status',1)->get()->toArray();
+			return $list;
+		} catch (Exception $e) {
+			
+		}
+	}
+	public function list()
+	{
+		try {
+			$input = Input::all();
+			$obj = TC::where('status',1);
+			if (isset($input['limit'])) {
+				$obj->limit($input['limit']);
+			}
+			if (isset($input['offset'])) {
+				$obj->offset($input['offset']);
+			}
+			if (isset($input['where'])) {
+				foreach ($input['where'] as $key => $value) {
+					if ($key == 'category_id') {
+						if (is_array($value)) {
+							$obj->whereIn($key,$value);
+						}else{
+							$obj->where($key,$value);
+						}
+					}elseif ($key == 'duration') {
+						$obj->whereBetween($key,$value);
+					}else{
+						$obj->where($key,$value);
+					}
+				}
+			}
+
+			$list = $obj->get()->toArray();
 			return $list;
 		} catch (Exception $e) {
 			

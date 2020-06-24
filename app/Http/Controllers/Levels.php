@@ -12,7 +12,7 @@ class Levels extends Controller
 	public function list()
 	{
 		try {
-			$list = DL::all()->toArray();
+			$list = DL::where('status',1)->get()->toArray();
 			return $list;
 		} catch (Exception $e) {
 			
